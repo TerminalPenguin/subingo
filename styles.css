@@ -24,7 +24,7 @@ body {
     margin: 20px auto;
     width: 90%;
     max-width: 600px;
-    animation: fade-in 1s ease-in;
+    animation: fade-in 1.5s ease-in;
 }
 
 .card, .freecard {
@@ -61,7 +61,7 @@ body {
 @keyframes fade-in {
     from {
         opacity: 0;
-        transform: translateY(20px);
+        transform: translateY(100px);
     }
     to {
         opacity: 1;
