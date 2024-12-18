@@ -20,6 +20,21 @@ body {
     aspect-ratio: 1 / 1; 
     max-width: 90vmin; 
     margin: 20px auto;
+    border: solid black 5px
+    border-radius: 25px;
+    padding: 10px;
+    background-color: rgba(255, 255, 255, 0.1);
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
+    animation: fade-in 1s ease-in;
+}
+
+
+.teacher-choices {
+    display: grid;
+    grid-template-rows: repeat(1,1fr);
+    grid-template-columns: 3fr 3fr 3fr ;
+    max-width: 90vmin; 
+    margin: 20px auto;
     border: solid black 5px;
     border-radius: 25px;
     padding: 10px;
@@ -44,12 +59,37 @@ body {
     aspect-ratio: 1 / 1; 
 }
 
+.choice-card, .escapebtn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 15px;
+    font-family: "Lato", sans-serif;
+    font-weight: 900;
+    font-size: 1.2rem;
+    background-color: rgba(255, 255, 255, 0.15);
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+    transition: transform 0.4s ease, background-color 0.3s ease, box-shadow 0.3s ease;
+    color: white;
+    letter-spacing: 1px;
+}
+
 .card:hover {
     transform: scale(1.1);
     background-color: rgb(37, 1, 167);
     box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
 }
+.choice-card:hover {
+    transform: scale(1.1);
+    background-color: rgb(1, 167, 29);
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
+}
 
+.escapebtn:hover {
+    transform: scale(1.1);
+    background-color: rgb(200, 7, 7);
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
+}
 .freecard {
     background-color: rgba(255, 0, 0, 0.7);
     text-decoration: line-through;
@@ -70,4 +110,10 @@ body {
         opacity: 1;
         transform: translateY(0);
     }
+
+
+
+.chosen-teach {
+    background-color: rgb(1, 167, 29);
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
 }
